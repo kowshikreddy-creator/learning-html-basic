@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+
+    <h1>Forms</h1>
+    <hr>
+    <form autocomplete="on">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="enter name">
+        <br><br>
+        <label for="password">password</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <label for="email">email</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label for="age">age</label>
+        <input type="number" id="age" name="age">
+        <br><br>
+        <label for="dob">date of birth</label>
+        <input type="date" id="dob" name="date of birth">
+        <br><br>
+        <label for="time">time</label>
+        <input type="time" id="time" name="time">
+        <br><br>
+        <label for="color">fav color</label>
+        <input type="color" id="color" name="color">
+        <br><br>
+        <label for="file">file</label>
+        <input type="file" id="file" name="file">
+
+        <br><br>
+        <label for="address">Address</label>
+        <br><br>
+        <textarea id="address" name="address" rows="4" cols="20" placeholder="enter address">
+
+        </textarea>
+        <br><br>
+        <label for="branch">branch</label>
+        <select id="branch" name="branch">
+
+            <option value="ece">Ece</option>
+            <option value="cse">Cse</option>
+            <option value="eee">EEE</option>
+            <option value="mech">Mech</option>
+            <option value="it">It</option>
+        </select>
+        <br><br>
+        <h2>group related dropdown</h2>
+        <label for="course">course</label>
+        <select id="course" name="course">
+
+            <optgroup label="programing">
+
+                <option>java</option>
+                <option>c++</option>
+                <option>python</option>
+
+            </optgroup>
+            <optgroup label="web development">
+
+
+                <option>html</option>
+                <option>css</option>
+                <option>java script</option>
+            </optgroup>
+            </select>
+            <br><br>
+            <label for="city">city</label>
+            
+
+            <input type="text" id="city" name="city" list="cities">
+            <datalist id="cities">
+
+               <option value="hyderabad"></option>
+               <option value="vizag"></option>
+               <option value="vijawada"></option>
+
+            </datalist>
+            <br><br>
+            <fieldset>
+                <legend>student details:</legend>
+               <label for="name">name:</label>
+               <input type="text" id="name">
+               <br><br>
+               <label for="age">age:</label>
+               <input type="number" id="age">
+               <br><br>
+               <label for="dob">date of birth:</label>
+               <input type="date" id="dob" name="dob">
+
+            </fieldset>
+           <br><br>
+           <hr>
+           <h2>required</h2>
+           <label>Name</label>
+           <input type="text" required>
+           <br><br>
+           <h2>read only</h2>
+           <label>name</label>
+           <input type="text" value="kowshik"readonly>
+           <hr>
+           <h2>Disabled</h2>
+           <label>name</label>
+           <input type="text" value="kowshik" disabled>
+           <hr>
+           <h2>radio button</h2>
+           <label for="male">Male</label>
+           <input type="radio" id="male" name="gender">
+           <label for="female">female</label>
+           <input type="radio" id="female" name="gender">
+           <hr>
+           <h2>check box</h2>
+           <label for="html">html</label>
+           <input type="checkbox" id="html" name="html" checked>
+           <label for="css">css</label>
+           <input type="checkbox" id="css" name="css">
+           <label for="java script">javascript</label>
+           <input type="checkbox" id="java script" name="css">
+
+
+
+            <br><br>
+            <input type="submit" value="submit">
+            
+
+        
+    </form>
+</body>
+
+</html>
